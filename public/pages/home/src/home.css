@@ -1,0 +1,90 @@
+* {
+    border-radius: 15px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfebf8;
+    background-image: linear-gradient(45deg, #0683C5, #E593FF); 
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.marginH {
+    margin: 10px 0 0 0;
+    width: 5vw;
+    height: 4vh;
+    display: inline-block;
+}
+
+.header {
+    background-color: #ffffff; /* Be white when loaded, JavaScript will update this to transparent when the user scrolls */
+    margin: 10px 0 0 0;
+    transition: background-color 0.25s linear;
+    width: 90vw;
+    display: inline-block;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.logoContainer {
+    padding: 20px;
+    width: 30%;
+    display: inline-block;
+}
+
+.appLogo {
+    height: 5vh;
+    border-radius: 0px;
+    display: inline-block;
+}
+
+.navBar {
+    /* width: 70%; */
+    display: inline-block;
+}
+
+.h1Center {
+    text-align: center;
+}
+
+.h4Center {
+    text-align: center;
+}
+
+.text {
+    margin: 2.5vw;
+    width: 46vw;
+    height: 150px;
+    border-color: #f5bf00;
+    border-width: 0px 0px 0px 6px;
+    border-radius: 8px;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.picText {
+    height: 7.5vh;
+    margin: 2vw;
+    float: left;
+}
+
+.descripText {
+    display: inline-block;
+    width: 50%;
+}
+
+.h4Text {
+    display: inline-block;
+    color: #000000;
+    margin: 13px 13px 5px 13px;
+}
+
+.pText {
+    color: #000000;
+    margin: 0px 0px 0px 13px;
+}

@@ -1,7 +1,7 @@
 {
     "name": "fileeditor",
     "version": "1.0.0",
-    "description": "",
+    "description": "Edit your files using this free, online editor tool! File management is now at the tip of your fingers!",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",

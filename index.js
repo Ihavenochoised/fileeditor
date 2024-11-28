@@ -1,14 +1,17 @@
-const express = require('express');
-const app = express();
-const path = require('path');
-const port = 80;
+const express = require('express'); 
+const app = express(); 
+const path = require('path'); 
+const router = express.Router(); 
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/home/index.html'));
-});
+router.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/public/pages/home/index.html')); 
+}); 
 
-app.listen(port, () => {
-  console.log(`
-    App listening at http://localhost:${port}
-    Critical errors are displayed below.\n`);
-});
+app.use('/', router);
+app.use(express.static('public'));
+
+app.listen(process.env.port || 80);
+console.log('Running at Port ' + 80);
+console.log('Local: http://localhost');
+console.log('For devices on the same network, use http://192.168.1.145');
+console.log('To kill this process, press Control + C or use Control + Z to pause it. Logs are below. \n');

@@ -9,6 +9,6 @@
     },
     "author": "Xiong Tianrui",
     "dependencies": {
-        "express": "^4.21.1"
+        "express": "^4.21.2"
     }
 }

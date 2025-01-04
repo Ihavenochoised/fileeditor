@@ -7,7 +7,7 @@ body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #bfebf8;
-    background-image: linear-gradient(45deg, #0683C5, #E593FF); 
+    background-image: linear-gradient(45deg, #0683C5, #E593FF);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
@@ -20,7 +20,8 @@ body {
 }
 
 .header {
-    background-color: #ffffff; /* Be white when loaded, JavaScript will update this to transparent when the user scrolls */
+    background-color: #ffffff;
+    /* Be white when loaded, JavaScript will update this to transparent when the user scrolls */
     margin: 10px 0 0 0;
     transition: background-color 0.25s linear;
     width: 90vw;
@@ -44,9 +45,10 @@ body {
 }
 
 .navBar {
-    /* width: 70%; */
     display: inline-block;
 }
+
+/*--------*/
 
 .h1Center {
     text-align: center;
@@ -56,35 +58,59 @@ body {
     text-align: center;
 }
 
-.text {
-    margin: 2.5vw;
+.toolSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 50vh;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 8px;
+}
+
+.tool {
     width: 46vw;
-    height: 150px;
+    margin: 20px;
+    height: 100%;
     border-color: #f5bf00;
     border-width: 0px 0px 0px 6px;
     border-radius: 8px;
     border-style: solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
 }
 
-.picText {
+.picTool {
     height: 7.5vh;
     margin: 2vw;
     float: left;
 }
 
-.descripText {
+.descripTool {
     display: inline-block;
     width: 50%;
 }
 
-.h4Text {
+.h4Tool {
     display: inline-block;
     color: #000000;
     margin: 13px 13px 5px 13px;
 }
 
-.pText {
+.pTool {
     color: #000000;
     margin: 0px 0px 0px 13px;
+}
+
+.arrowContainer {
+    display: inline-block;
+}
+
+.lArrow,
+.rArrow {
+    padding: 5px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    display: inline-block;
 }

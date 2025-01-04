@@ -1,8 +1,3 @@
-// Root page when clicked
-var appLogo = document.querySelector('.appLogo');
-appLogo.onclick = function () {
-    window.location.href = '/';
-};
 // Rotate gradient
 var gradientRotate = 45;
 setInterval(function () {
@@ -32,8 +27,8 @@ header.onmouseout = function () {
     }
 };
 // Text Editor Option
-var text = document.querySelector('.text');
-var picText = document.querySelector('.picText');
+var text = document.querySelector('.tool');
+var picText = document.querySelector('.picTool');
 text.onmouseover = function () {
     text.style.backgroundColor = '';
     picText.style.brightness = '200%';
